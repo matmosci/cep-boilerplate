@@ -1,5 +1,5 @@
 <ExtensionList>
-    <Extension Id="com.matmosci.Boilerplate.Panel">
+    <Extension Id="com.matmosci.boilerplate.panel">
         <HostList>
             <Host Name="ILST" Port="8181" />
         </HostList>

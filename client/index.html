@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
 
-    <body>
-        <button onclick="location.reload()">Reload</button>
-        <!-- <script>
-            console.log("__adobe_cep__", window.__adobe_cep__);
-            console.log("CSInterface", new CSInterface().__proto__);
-            console.log("Vulcan", VulcanInterface.__proto__);
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            window.__adobe_cep__.evalScript("Version()", function (result) {
-                console.log("Version", result);
-            });
-        </script>
-        <script type="text/javascript" src="CSInterface.js"></script>
-        <script type="text/javascript" src="index.js"></script> -->
-    </body>
+<body>
+    <div class="p-3">
+        <h1 class="mt-0 mb-3 fs-6 text-app">Margin</h1>
+        <form onsubmit="onMarginSubmit(event)">
+            <select name="units" id="units" class="mb-2">
+                <option value="RulerUnits.Points">Points</option>
+                <option value="RulerUnits.Millimeters">Millimeters</option>
+                <option value="RulerUnits.Centimeters">Centimeters</option>
+                <option value="RulerUnits.Inches">Inches</option>
+                <option value="RulerUnits.Pixels">Pixels</option>
+            </select>
+            <div>
+                <input type="number" id="margin-width" name="margin" placeholder="Margin" value="0">
+                <input type="submit" value="Set" class="btn-app">
+            </div>
+            <div class="d-flex mt-2">
+                <input type="checkbox" name="margin-individual" id="margin-individual" class="my-auto">
+                <label class="my-auto ps-1 text-app" for="margin-individual">Individual</label>
+            </div>
+        </form>
+    </div>
+    <hr class="m-0">
+    <div class="debug p-3">
+        <div class="text-end">
+            <!-- <button class="btn-app" onclick="logActiveDocument()">getDoc</button> -->
+            <button class="btn-app" onclick="reload()">Reload</button>
+        </div>
+        <div id="version" class="text-end text-app"></div>
+    </div>
+    <script type="text/javascript" src="CSInterface.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="theme.js"></script>
+</body>
+
 </html>

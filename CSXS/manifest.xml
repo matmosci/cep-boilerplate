@@ -29,11 +29,11 @@
         </Lifecycle>
         <UI>
           <Type>Panel</Type>
-          <Menu>Boilerplate Panel</Menu>
+          <Menu>SQTools</Menu>
           <Geometry>
             <Size>
-              <Height>500</Height>
-              <Width>350</Width>
+              <Height>300</Height>
+              <Width>200</Width>
             </Size>
           </Geometry>
           <Icons />

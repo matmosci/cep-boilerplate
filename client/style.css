@@ -1,0 +1,37 @@
+:root {
+    --app-font-size: 10px;
+    --app-font-family: Tahoma, Verdana, Geneva, sans-serif;
+    --app-color: rgb(255, 255, 255);
+    --app-background-color: rgb(83, 83, 83);
+}
+
+* {
+    font-size: var(--app-font-size);
+    font-family: var(--app-font-family);
+    user-select: none;
+}
+
+.text-app {
+    color: var(--app-color);
+}
+
+.bg-app {
+    background-color: var(--app-background-color);
+}
+
+.btn-app {
+    background-color: transparent !important;
+    color: var(--app-color) !important;
+    border: 1px solid var(--app-color) !important;
+    border-radius: 2px;
+}
+
+.btn-app:hover {
+    background-color: #88888844 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--app-background-color) !important;
+}

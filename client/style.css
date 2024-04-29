@@ -3,6 +3,8 @@
     --app-font-family: Tahoma, Verdana, Geneva, sans-serif;
     --app-color: rgb(255, 255, 255);
     --app-background-color: rgb(83, 83, 83);
+    --app-input-background-color: rgb(83, 83, 83);
+    --app-input-border-color: #ffffff22;
 }
 
 * {
@@ -34,4 +36,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--app-background-color) !important;
+}
+
+input,
+select,
+textarea {
+    background-color: var(--app-input-background-color);
+    color: var(--app-color);
+    border: 1px solid var(--app-input-border-color);
+    border-radius: 4px;
 }
